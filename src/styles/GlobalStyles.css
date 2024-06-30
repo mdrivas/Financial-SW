@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* src/routes/Home/GlobalStyles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.App {
+  padding-top: 60px; /* Adjust padding to prevent overlap with navbar */
+}
