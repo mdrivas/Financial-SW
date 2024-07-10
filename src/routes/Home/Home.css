@@ -1,0 +1,124 @@
+/* src/routes/Home/Home.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Dark background */
+    color: #eaeaea; /* Light text color */
+  }
+  
+  .home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #eaeaea; /* Light text color */
+  }
+  
+  .dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap for consistent spacing */
+  }
+  
+  .overview-item {
+    background: #333; /* Dark background for overview items */
+    border: 1px solid #444; /* Slightly darker border */
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1; /* Allow items to grow and shrink equally */
+    min-width: 280px; /* Set a minimum width to prevent too narrow items */
+    max-width: 30%; /* Set a maximum width for better alignment */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #eaeaea; /* Light text color */
+  }
+  
+  .overview-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .dashboard-link {
+    display: block;
+    margin-top: 10px;
+    color: #61dafb; /* Light blue text color for links */
+    text-decoration: none;
+  }
+  
+  .dashboard-link:hover {
+    text-decoration: underline;
+  }
+  
+  .quick-access {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .quick-access-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .quick-access-link:hover {
+    background: #0056b3;
+  }
+  
+  .recent-activities,
+  .notifications {
+    margin-top: 40px;
+  }
+  
+  .recent-activities ul,
+  .notifications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-activities li,
+  .notifications li {
+    background: #333; /* Dark background for list items */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #eaeaea; /* Light text color */
+  }
+  
+  .recent-activities h2,
+  .notifications h2 {
+    margin-bottom: 20px;
+    color: #eaeaea; /* Light text color */
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-overview {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .overview-item {
+      width: 80%;
+    }
+  
+    .quick-access-link {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  

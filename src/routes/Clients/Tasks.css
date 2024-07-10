@@ -1,49 +1,64 @@
 /* src/routes/Client/Tasks.css */
 
 .Tasks {
-    padding: 40px;
-  }
-  
-  .add-task-button {
-    margin-bottom: 20px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .add-task-button:hover {
-    background-color: #0056b3;
-  }
-  
-  table {
-    width: 90%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  h1 {
-    margin: 0 0 20px 0;
-  }
-  
+  padding: 40px;
+  color: #eaeaea; /* Light text color */
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1a1a2e; /* Dark background for table */
+}
+
+th, td {
+  border: 1px solid #444; /* Slightly darker border */
+  padding: 12px;
+  text-align: left;
+  color: #eaeaea; /* Light text color */
+}
+
+th {
+  background-color: #333; /* Darker background for headers */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #2a2a3e; /* Slightly lighter background for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: #1a1a2e; /* Dark background for odd rows */
+}
+
+tr:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+h1 {
+  margin: 0;
+  color: #eaeaea; /* Light text color */
+}
+
+button {
+  padding: 6px 12px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+select {
+  background-color: #333; /* Dark background for select */
+  color: #eaeaea; /* Light text color */
+  border: 1px solid #444; /* Slightly darker border */
+  border-radius: 4px;
+  padding: 5px;
+}
